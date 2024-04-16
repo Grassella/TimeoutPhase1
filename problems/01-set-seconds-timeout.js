@@ -8,13 +8,11 @@ in *seconds*. The function should set a timeout on the given callback for
 the specified amount of time. Feel free to use the built-in `setTimeout`
 in your implementation.
 
-In addition to Mocha, we recommend that you test your code manually using 
-node with the examples below. Use the command 
+In addition to Mocha, we recommend that you test your code manually using
+node with the examples below. Use the command
 `node problems/01-set-seconds-timeout.js`
 
 Examples:
-
-
 ***********************************************************************/
 
 function setSecondsTimeout(cb, delayInSeconds) {
