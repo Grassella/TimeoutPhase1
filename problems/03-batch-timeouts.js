@@ -17,6 +17,16 @@ you will need to test your new solution manually using node.
 
 Example:
 
+
+***********************************************************************/
+
+function batchTimeouts(callbacks, delays) {
+  for (let i = 0; i < tasks.length; i++) {
+    let task = tasks[i];
+    let delay = delays[i];
+  }
+}
+
 const sayHello = () => console.log('hi');
 const sayGoodbye = () => console.log('bye');
 const shout = () => console.log('WHAT?');
@@ -30,12 +40,6 @@ const timeoutObjs = batchTimeouts(tasks, delays);
 //  'WHAT?' after 900 ms
 
 console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
-***********************************************************************/
-
-function batchTimeouts(callbacks, delays) {
-  // Your code here 
-}
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = batchTimeouts;
